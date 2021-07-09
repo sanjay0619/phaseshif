@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+
+/*navigation*/
+
+nav {
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav .phaseshift {
+    font-weight: 900;
+    padding: 1%;
+}
+
+nav .light {
+    font-weight: 100;
+    color: gray;
+}
+
+nav ul {
+    margin-left: 33.8rem;
+}
+
+nav li {
+    list-style: none;
+    display: inline-flex;
+    margin-right: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav button {
+    color: #fff;
+    display: none;
+}
+
+
+/*header*/
+
+header {
+    background-image: url(../img/phaseshift/bg.jpg);
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 5%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.top {
+    width: 100%;
+    margin: 1rem 0 3rem 0;
+}
+
+.top h3 {
+    line-height: 2rem;
+    font-weight: 100;
+}
+
+.top .bold {
+    font-weight: bold;
+}
+
+.top .underline {
+    text-decoration: underline;
+}
+
+.top .button {
+    width: 135px;
+    height: 35px;
+    color: #fff;
+    background-color: purple;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.box {
+    width: 30%;
+    background-color: #fff;
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box p {
+    line-height: 1.7rem;
+    padding: 2%;
+}
+
+.box .btn {
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background-color: purple;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.tools {
+    width: 45%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.tools .left {
+    width: 10%;
+    margin-top: 1.5rem;
+}
+
+.left span {
+    font-size: 2rem;
+}
+
+.tools .right {
+    width: 90%;
+}
+
+.right h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.right p {
+    font-weight: 100;
+    line-height: 1.6rem;
+}
+
+.tools hr {
+    width: 100%;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+
+/*section*/
+
+section {
+    background-color: purple;
+    width: 100%;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    color: #fff;
+    padding: 3%;
+}
+
+.form h1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.form p {
+    margin-bottom: 2rem;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 70%;
+    height: 35px;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea {
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+}
+
+::placeholder {
+    color: gray;
+    padding: 2%;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type="submit"] {
+    width: 135px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 4% 0 5% 0;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+footer i {
+    font-size: 10rem;
+    border: 10px double #fff;
+    padding: 1%;
+    border-radius: 50%;
+    margin-left: 1rem;
+    width: 30px;
+    height: 30px;
+}
+
+footer .gray {
+    color: gray;
+}
+
+
+/*media*/
+
+@media (max-width:600px) {
+    /*navigation*/
+    nav ul {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        right: 3rem;
+        font-size: 0.8rem;
+        float: left;
+    }
+    nav li {
+        float: left;
+    }
+    nav li a {
+        float: left;
+    }
+    nav button {
+        border: none;
+        background: none;
+        display: block;
+        padding-right: 2%;
+    }
+    /*header*/
+    .container {
+        padding: 3%;
+    }
+    .top h3 {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+    .top .button {
+        width: 110px;
+        height: 30px;
+    }
+    .box {
+        width: 60%;
+        margin-left: 6rem;
+    }
+    .box .btn {
+        width: 95px;
+        height: 30px;
+    }
+    .tools {
+        width: 60%;
+        margin-left: 6rem;
+        font-size: 0.8rem;
+    }
+    .left span {
+        font-size: 1.5rem;
+    }
+    /*form*/
+    .form h1 {
+        font-size: 1.2rem;
+    }
+    .form p {
+        font-size: 0.8rem;
+    }
+    input[type="submit"] {
+        width: 120px;
+        height: 30px;
+    }
+    /*footer*/
+    footer p {
+        font-size: 1rem;
+    }
+    /*  @keyframes my-animation {
+        0% {
+            transform: scale(2) translate(200px, 150px) rotate(180deg) skew(30deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
+    .top,
+    .box {
+        animation: my-animation 4s linear 0s 1 alternate;
+        /*10s-duration and 1-count it means 10s mai 1 bar animation play hoga*/
+}
